@@ -4,7 +4,7 @@ class kafka::server(
 	$broker_id                               = undef,
 	$log_dir                                 = "/var/lib/kafka/log",
 	$port                                    = 9092,
-	$num_threads                             = 8,
+	$num_threads                             = undef,
 	$num_partitions                          = 1,
 	$socket_send_buffer                      = 1048576,
 	$socket_receive_buffer                   = 1048576,

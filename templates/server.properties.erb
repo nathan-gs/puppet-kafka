@@ -22,7 +22,7 @@ port=<%= port %>
 
 # The number of processor threads the socket server uses for receiving and answering requests. 
 # Defaults to the number of cores on the machine
-num.threads=<%= num_threads %>
+<%= @num_threads ? "num.threads=#{num_threads}" : "#num_threads=" %>
 
 # The send buffer (SO_SNDBUF) used by the socket server
 socket.send.buffer=<%= socket_send_buffer %>
