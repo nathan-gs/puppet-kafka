@@ -3,7 +3,6 @@
 class kafka::config(
 	$zookeeper_hosts                = undef,
 	$zookeeper_connectiontimeout_ms = 1000000,
-        $kafka_log_file_dir		= "/var/log/kafka",
 	$kafka_log_file                 = "/var/log/kafka/kafka.log",
 	$producer_type                  = "async",
 	$producer_batch_size            = 200)
