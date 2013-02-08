@@ -1,5 +1,8 @@
 # == Class kafka::install
 #
 class kafka::install {
-	package { "kafka": ensure => "installed" }
+
+    if !defined(Package["kafka"]) {
+      package {"kafka": ensure => installed }
+    }
 }
